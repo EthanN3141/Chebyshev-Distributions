@@ -1,0 +1,25 @@
+AUTHOR: Ethan Nanavati
+LAST MODIFIED: 6/28/2024
+
+
+PURPOSE:
+    The purpose of this project is to reconstruct a posterior distribution given only a scaled version of it. 
+    I develop a method where, after sampling the chebyshev points, a polynomial is interpolated then integrated,
+    scaled, and used as an approximation of the posterior distribution. 
+
+    The method is evaluated against a histogram of the sampled values from the Metropolis algorithm (which is also 
+    implemented here).
+
+FILES:
+    Dataset_Management_Class.py: 
+        Creates a distribution given a set of parameters. Provides functions to access
+        and work with the distribution.
+    Chebyshev_Class.py: 
+        Implements Chebyshev interpolation and stores the interpolant
+    Metropolis_Class.py:
+        implements Metropolis algorithm and returns the samples
+    Method_Comparison.py:
+        Computes l1 error for Metropolis histogram and Chebyshev interpolation to the target distribution 
+        and visualizes their representations.
+    Main.py:
+        Runs the experiment comparing Metropolis histogram and Chebyshev interpolation to the target distribution.
