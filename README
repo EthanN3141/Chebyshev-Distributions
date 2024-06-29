@@ -23,3 +23,5 @@ FILES:
         and visualizes their representations.
     Main.py:
         Runs the experiment comparing Metropolis histogram and Chebyshev interpolation to the target distribution.
+    CS136_Project.pdf:
+        Full writeup of the methods used, the experiment, and the conclusions
